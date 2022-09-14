@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IsiBeirtaFragment">
+
+    <RelativeLayout
+        android:layout_margin="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/judulIsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-black"
+            android:text="I Was Enchanting to Meet You"
+            android:textColor="@color/dark_blue"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tanggalIsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/judulIsi"
+            android:text="Sun, 25 Aug 2002"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/jurnalis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aghni Qisthina Al Rahma"
+            android:textSize="12sp"
+            android:layout_below="@id/judulIsi"
+            android:layout_alignParentRight="true"/>
+
+        <ImageView
+            android:id="@+id/gambarIsi"
+            android:src="@drawable/berita_twt"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tanggalIsi"/>
+
+        <TextView
+            android:id="@+id/isiBerita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gambarIsi"
+            android:text="Data breaches have been recurring events in Indonesia over the past few years, with the private data of millions of internet users being leaked again and again, whether from government institutions or private corporations."
+            android:textSize="12sp"
+            android:justificationMode="inter_word"/>
+    </RelativeLayout>
+
+</FrameLayout>
